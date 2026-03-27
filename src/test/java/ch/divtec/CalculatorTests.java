@@ -10,4 +10,19 @@ public class CalculatorTests {
     void addNormal(){
         Assertions.assertEquals(4, calculator.add(2,2));
     }
+
+    @Test
+    void addNegative(){
+        Assertions.assertEquals(-1, calculator.add(2,-3));
+    }
+
+    @Test
+    void subtractNormal(){
+        Assertions.assertEquals(1, calculator.subtract(3,2));
+    }
+
+
 }
+
+
+
